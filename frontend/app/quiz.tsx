@@ -32,7 +32,7 @@ export default function Quiz() {
 
   const fetchQuiz = async () => {
     try {
-      const res = await fetch("http://localhost:5000/api/quiz/generate", {
+      const res = await fetch("https://ai-quiz-generator-dfb8.onrender.com/api/quiz/generate", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -95,7 +95,7 @@ export default function Quiz() {
   // 📌 If last question → save history in backend
   if (current + 1 === quiz.length) {
     try {
-      await fetch("http://localhost:5000/api/quiz/save", {
+      await fetch("https://ai-quiz-generator-dfb8.onrender.com/api/quiz/save", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

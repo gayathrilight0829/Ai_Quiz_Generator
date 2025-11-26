@@ -101,7 +101,10 @@ ios/
 # -----------------------------
 # Build Outputs
 # -----------------------------
-dist/
+# Ignore everything in dist EXCEPT the Netlify redirects file
+frontend/dist/*
+!frontend/dist/_redirects
+
 build/
 out/
 
