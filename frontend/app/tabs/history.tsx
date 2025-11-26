@@ -18,7 +18,7 @@ export default function History() {
   useEffect(() => {
     if (!token) return;
 
-    fetch("http://localhost:5000/api/quiz/history", {
+    fetch("https://ai-quiz-generator-dfb8.onrender.com/api/quiz/history", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ token }),

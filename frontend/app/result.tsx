@@ -11,7 +11,7 @@ export default function Result() {
 
   useEffect(() => {
     // Save result to backend history
-    fetch("http://localhost:5000/api/quiz/save", {
+    fetch("https://ai-quiz-generator-dfb8.onrender.com/api/quiz/save", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
